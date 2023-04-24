@@ -26,7 +26,7 @@ public class MemberSearchAPI {
 	 * @return
 	 */
 	@CrossOrigin(origins = "*")
-	@RequestMapping(value = "/searchMember", method = RequestMethod.POST,produces = "application/json")
+	@RequestMapping(value = "/api/searchMember", method = RequestMethod.POST,produces = "application/json")
 	public ResponseEntity<MemberSearchResponse> searchPatient(@RequestBody MemberSearchRequest memberSearchRequest) {
 
 		MemberSearchResponse patientSearchResponse = memberData.searchMember(memberSearchRequest);
